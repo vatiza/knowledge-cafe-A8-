@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import './Post.css';
+import PropTypes from 'prop-types';
 
-const Post = (props) => {
-    const { name, userpic, registered, posttitle, readtime, picture } = props.post;
-    console.log(props)
+const Post = ({ post, markAsBtn }) => {
+    const { name, userpic, id, registered, posttitle, readtime, picture } = post;
+
     return (
         <>
             <div className="post-container">
@@ -21,12 +22,18 @@ const Post = (props) => {
                 </div>
                 <h3 className='post-title'>{posttitle}</h3>
                 <p className='post-tag'>#beginners  #programming</p>
-                <button className='markasbtn'>Mark As Read</button>
+                <button
+                    onClick={() => markAsBtn(id, readtime)}
+                    className='markasbtn'>Mark As Read</button>
             </div>
 
         </>
 
     );
 };
+Post.PropTypes = {
+    post: PropTypes.object.isRequired,
+    markAsBtn: PropTypes.func,
+}
 
 export default Post;
