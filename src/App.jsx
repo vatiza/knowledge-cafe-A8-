@@ -7,16 +7,20 @@ import Nav from './Components/Nav/Nav'
 
 function App() {
   const [newreadTime, setnewreadTime] = useState(0)
-  const [bookmarks, setbookmarks] = useState([]);
+  const [bookmarksTitles, setbookmarksTitles] = useState([]);
 
   const markAsBtn = (id, readtime) => {
     const addNewReadTime = newreadTime + readtime;
     setnewreadTime(addNewReadTime);
+    const reminBookmarks = bookmarksTitles.filter(bookmark => bookmark.id !== id);
+    setbookmarksTitles(reminBookmarks);
     // console.log(addNewReadTime);
   }
   const manageBookmark = (post) => {
-    // const newBookmarks = [...bookmarks]
-    console.log(post);
+    const newBookmarks = [...bookmarksTitles, post];
+    setbookmarksTitles(newBookmarks);
+
+
   }
 
 
@@ -25,7 +29,7 @@ function App() {
       <Nav></Nav>
       <div className='main-body'>
         <Blogs markAsBtn={markAsBtn} manageBookmark={manageBookmark}  ></Blogs>
-        <Bookmark newreadTime={newreadTime} ></Bookmark>
+        <Bookmark newreadTime={newreadTime} bookmarksTitles={bookmarksTitles} ></Bookmark>
 
       </div>
     </>

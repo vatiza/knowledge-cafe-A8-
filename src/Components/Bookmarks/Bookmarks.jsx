@@ -1,22 +1,30 @@
+import BookmarkTitles from '../BookmarkTitles/BookmarkTitles';
 import './Bookmarks.css'
 import PropTypes from 'prop-types';
 
-const Bookmark = ({ newreadTime }) => {
-    console.log(newreadTime);
+const Bookmark = ({ newreadTime, bookmarksTitles }) => {
+    // console.log(bookmarksTitles);
     return (
         <>
             <div className="bookmark-time-container">
                 <h1>Spent time on read: {newreadTime}</h1>
-            </div>
-            <div className='bookmark-title-section'>
+                <h2 className='selected-items'>Bookmarked Blogs: {bookmarksTitles.length}</h2>
+                <div className='bookmark-title-section'>
+                    {
+                        bookmarksTitles.map((bookmark, id) => <BookmarkTitles key={id}
+                            bookmark={bookmark}></BookmarkTitles>)
+                    }
 
+
+                </div>
             </div>
+
 
         </>
     );
 };
 Bookmark.propTypes = {
-    // bookmarks: PropTypes.array,
+    bookmarksTitles: PropTypes.array,
     newreadTime: PropTypes.number
 }
 export default Bookmark;
