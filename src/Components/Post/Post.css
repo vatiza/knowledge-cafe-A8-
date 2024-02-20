@@ -1,0 +1,36 @@
+.post-container {
+    width: 845px;
+
+}
+
+.post-photo {
+    width: 845px;
+    height: 450px;
+    border-radius: 10px;
+
+}
+
+.name {
+    margin-left: 10px;
+
+}
+
+.post-date {
+    margin: 0;
+    margin-left: 40px;
+}
+
+.user-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
+
+}
+
+
+.user-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

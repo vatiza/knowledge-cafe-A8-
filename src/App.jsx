@@ -1,6 +1,7 @@
 
 import './App.css'
 import Blogs from './Components/Blogs/Blogs'
+import Bookmark from './Components/Bookmarks/Bookmark'
 import Nav from './Components/Nav/Nav'
 
 function App() {
@@ -9,8 +10,9 @@ function App() {
   return (
     <>
       <Nav></Nav>
-      <div>
-        <Blogs></Blogs>
+      <div className='main-body'>
+        <Blogs  ></Blogs>
+        <Bookmark  ></Bookmark>
 
       </div>
     </>

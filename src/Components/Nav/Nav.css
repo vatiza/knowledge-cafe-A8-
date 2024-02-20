@@ -8,6 +8,7 @@
 
 a {
     margin-right: 15px;
+    text-decoration: none;
 
 }
 
@@ -15,6 +16,6 @@ a:hover {
     color: orange;
 }
 
-img {
+ul img {
     width: 40px;
 }
