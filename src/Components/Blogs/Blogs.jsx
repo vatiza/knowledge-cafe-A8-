@@ -30,7 +30,7 @@ Blogs.propTypes = {
     blog: PropTypes.object,
     post: PropTypes.object,
     markAsBtn: PropTypes.func,
-    
+
 }
 
 export default Blogs;
