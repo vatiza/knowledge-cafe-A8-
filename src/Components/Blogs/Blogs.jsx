@@ -28,6 +28,7 @@ const Blogs = ({ markAsBtn, manageBookmark }) => {
     );
 };
 Blogs.propTypes = {
+    post: PropTypes.object,
     blog: PropTypes.object,
     manageBookmark: PropTypes.func,
     markAsBtn: PropTypes.func,

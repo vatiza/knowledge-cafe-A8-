@@ -10,11 +10,14 @@ function App() {
   const [bookmarksTitles, setbookmarksTitles] = useState([]);
 
   const markAsBtn = (id, readtime) => {
-    const addNewReadTime = newreadTime + readtime;
+    const prseNum = parseInt(readtime)
+    const addNewReadTime = newreadTime + prseNum;
+    // const parsEint = parseInt(addNewReadTime)
     setnewreadTime(addNewReadTime);
     const reminBookmarks = bookmarksTitles.filter(bookmark => bookmark.id !== id);
     setbookmarksTitles(reminBookmarks);
-    // console.log(addNewReadTime);
+    // console.log(reminBookmarks);
+
   }
   const manageBookmark = (post) => {
     const newBookmarks = [...bookmarksTitles, post];
