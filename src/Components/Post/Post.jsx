@@ -3,7 +3,7 @@ import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import './Post.css';
 import PropTypes from 'prop-types';
 
-const Post = ({ post, markAsBtn }) => {
+const Post = ({ post, markAsBtn, manageBookmark }) => {
     const { name, userpic, id, registered, posttitle, readtime, picture } = post;
 
     return (
@@ -17,7 +17,7 @@ const Post = ({ post, markAsBtn }) => {
                         <p className='post-date'>{registered}</p>
                     </div>
                     <div>
-                        <p>{readtime} min read <button> <FontAwesomeIcon icon={faBookmark} /> </button> </p>
+                        <p>{readtime} min read <button onClick={() => manageBookmark(post)} > <FontAwesomeIcon icon={faBookmark} /> </button> </p>
                     </div>
                 </div>
                 <h3 className='post-title'>{posttitle}</h3>
@@ -32,6 +32,7 @@ const Post = ({ post, markAsBtn }) => {
     );
 };
 Post.PropTypes = {
+    manageBookmark:PropTypes.func,
     post: PropTypes.object.isRequired,
     markAsBtn: PropTypes.func,
 }

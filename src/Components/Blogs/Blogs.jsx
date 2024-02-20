@@ -4,7 +4,7 @@ import Post from '../Post/Post';
 import PropTypes from 'prop-types';
 
 
-const Blogs = ({ markAsBtn }) => {
+const Blogs = ({ markAsBtn, manageBookmark }) => {
     const [blogs, setblogs] = useState([])
     useEffect(() => {
         fetch('data.json')
@@ -19,6 +19,7 @@ const Blogs = ({ markAsBtn }) => {
                     key={post.id}
                     post={post}
                     markAsBtn={markAsBtn}
+                    manageBookmark={manageBookmark}
 
                 ></Post>)
             }
@@ -28,7 +29,7 @@ const Blogs = ({ markAsBtn }) => {
 };
 Blogs.propTypes = {
     blog: PropTypes.object,
-    post: PropTypes.object,
+    manageBookmark: PropTypes.func,
     markAsBtn: PropTypes.func,
 
 }
