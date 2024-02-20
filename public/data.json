@@ -1,0 +1,57 @@
+[
+    {
+        "id": "65c647d283e4ace08faaebd8",
+        "picture": "./public/images/1.jpg",
+        "userpic": "./public/images/boy1.png",
+        "name": "Gardner Nolan",
+        "phone": "+1 (966) 504-2282",
+        "address": "507 Hall Street, Dixie, Puerto Rico, 252",
+        "posttitle": "How to get your first job as a self-taught programmer",
+        "registered": "Mar 14",
+        "readtime": "5"
+    },
+    {
+        "id": "65c647d2566e01fb92bd967d",
+        "picture": "./public/images/2.png",
+        "userpic": "./public/images/boy2.png",
+        "name": "Benton Durham",
+        "phone": "+1 (990) 573-3526",
+        "address": "899 Cozine Avenue, Ruckersville, South Dakota, 5819",
+        "posttitle": "How to get your first job as a self-taught programmer.\r\n",
+        "registered": "2016-08-06T09:55:49 -06:00",
+        "readtime": "8"
+    },
+    {
+        "id": "65c647d2ca07e9c218029a1e",
+        "picture": "./public/images/3.png",
+        "userpic": "./public/images/girl1.jpg",
+        "name": "Irma Bean",
+        "phone": "+1 (829) 511-2464",
+        "address": "168 Ebony Court, Eden, Hawaii, 2035",
+        "posttitle": "How to get your first job as a self-taught programmer.\r\n",
+        "registered": "2014-05-01T05:14:46 -06:00",
+        "readtime": "10"
+    },
+    {
+        "id": "65c647d2b2fd780b75de2e7b",
+        "picture": "./public/images/4.jpg",
+        "userpic": "./public/images/girl2.jpg",
+        "name": "Dennis Dunlap",
+        "phone": "+1 (906) 514-3958",
+        "address": "190 George Street, Elwood, Northern Mariana Islands, 3503",
+        "posttitle": "How to get your first job as a self-taught programmer.\r\n",
+        "registered": "2023-12-03T06:00:19 -06:00",
+        "readtime": "12"
+    },
+    {
+        "id": "65c647d2755bda6ee3dcbd9e",
+        "picture": "./public/images/1.jpg",
+        "userpic": "./public/images/boy1.png",
+        "name": "Hester Valdez",
+        "phone": "+1 (906) 553-2053",
+        "address": "590 Lefferts Avenue, Advance, Colorado, 2430",
+        "posttitle": "How to get your first job as a self-taught programmer.\r\n",
+        "registered": "2017-05-27T01:39:42 -06:00",
+        "readtime": "17"
+    }
+]
